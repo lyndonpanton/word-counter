@@ -121,7 +121,17 @@
         </section>
 
         <section id="data">
+            <ul id="data-legal">
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Cookies</li>
+            </ul>
 
+            <ul id="data-social">
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
         </section>
 
         <p id="copyright">
