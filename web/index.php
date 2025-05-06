@@ -10,8 +10,8 @@
             statistics about text they supply to the application, such as the
             word count, character count, space counter, word occurrence count."
             />
-    <meta name="keywords" content="word, counter, document, literature, report,
-            assignment, writing, literature, text, grammar" />
+    <meta name="keywords" content="word, count, counter, document, literature,
+            report, assignment, writing, literature, text, grammar" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
             user-scalable=true, minimum-scale=0.25, maximum-scale=2.0" />
 
@@ -25,6 +25,8 @@
     <!-- font awesome... -->
 
     <!-- first party resources -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     
