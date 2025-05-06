@@ -9,7 +9,7 @@ body, html {
 
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     font-style: normal;
     font-variation-settings:
@@ -70,23 +70,43 @@ main {
 
 /* Footer *********************************************************************/
 footer {
-
+    padding: 0 8vw;
 }
 
 #project {
-
+    display: flex;
+    flex-direction: row;
 }
 
 .project-list {
-    
+    margin: 0;
+    padding: 10vh 4vw;
+    width: 25vw;
+
+    font-size: 1.2em;
+
+    list-style-type: none;
 }
 
 .project-list-item {
+    margin-bottom: 1vh;
 
+    font-weight: 300;
+}
+
+.project-list-item > a {
+    color: #565656;
+    text-decoration: none;
+}
+
+.project-list-item > a:hover, .project-list-item > a:focus {
+    color: black;
 }
 
 .project-list-heading {
+    margin-bottom: 3vh;
 
+    font-weight: 600;
 }
 
 #data {
@@ -98,6 +118,7 @@ footer {
     border-top: 1px solid #CDCDCD;
     padding: 3vh 0;
 
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 300;
     text-align: center;
 }
