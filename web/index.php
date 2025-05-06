@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en-GB">
 <head>
-    <!-- meta -->
-    <!-- charset, application-name author, description, keywords, viewport -->
+    <!-- meta: charset, application-name, author, description, keywords,
+            viewport -->
     <meta charset="UTF-8" />
     <meta name="application-name" content="word-counter" />
     <meta name="author" content="Lyndon Mykal Panton" />
@@ -15,7 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
             user-scalable=true, minimum-scale=0.25, maximum-scale=2.0" />
 
-    <!-- title -->
+    <!-- tab: favicon, title -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <title>Word Counter</title>
 
     <!-- third libraries -->
