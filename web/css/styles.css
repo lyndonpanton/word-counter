@@ -42,6 +42,7 @@ main {
     height: 80%;
 }
 
+/* Counter */
 #counter {
     margin-left: 5%;
     margin-right: 5%;
@@ -49,6 +50,7 @@ main {
     width: 20%;
 }
 
+/* Words */
 #words {
     margin-left: 5%;
     margin-right: 5%;
@@ -66,8 +68,36 @@ main {
     overflow-y: scroll;
 }
 
-/* Counter */
-
-/* Input */
-
 /* Footer *********************************************************************/
+footer {
+
+}
+
+#project {
+
+}
+
+.project-list {
+    
+}
+
+.project-list-item {
+
+}
+
+.project-list-heading {
+
+}
+
+#data {
+
+}
+
+#copyright {
+    margin: 0;
+    border-top: 1px solid #CDCDCD;
+    padding: 3vh 0;
+
+    font-size: 1.5em;
+    text-align: center;
+}
