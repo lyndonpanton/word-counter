@@ -58,6 +58,72 @@
     </main>
 
     <footer>
+        <section id="project">
+            <ul class="project-list">
+                <li class="project-list-item project-list-heading">
+                    Developer Information
+                </li>
+                <li class="project-list-item">
+                    <a href="https://www.linkedin.com/in/lyndonpanton/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://github.com/lyndonpanton" target="_blank">GitHub</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://lyndonpanton.co.uk/" target="_blank">Website</a>
+                </li>
+            </ul>
+            <ul class="project-list">
+                <li class="project-list-item project-list-heading">
+                    Languages and Frameworks
+                </li>
+                <li class="project-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://www.php.net/" target="_blank">PHP</a>
+                </li>
+            </ul>
+            <ul class="project-list">
+                <li class="project-list-item project-list-heading">
+                    Packages and Libraries
+                </li>
+                <li class="project-list-item">
+                    <a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://fonts.google.com/" target="_blank">Google Fonts<a>
+                </li>
+            </ul>
+            <ul class="project-list">
+                <li class="project-list-item project-list-heading">
+                    More Projects
+                </li>
+                <li class="project-list-item">
+                    <a href="https://github.com/lyndonpanton/portfolio" target="_blank">Portfolio</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://github.com/lyndonpanton/task-list" target="_blank">Task List</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="https://github.com/lyndonpanton/word-counter" target="_blank">Word Counter</a>
+                </li>
+                <li class="project-list-item">
+                    <a href="#" target="_blank">???</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="external">
+
+        </section>
+
         <p id="copyright">
             &copy; <span id="current-year"><?php echo date("Y") ?></span>
             Lyndon Mykal Panton | All Rights Reserved
