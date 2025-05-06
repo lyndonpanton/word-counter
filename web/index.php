@@ -52,7 +52,10 @@
     </main>
 
     <footer>
-
+        <p id="copyright">
+            &copy; <span id="current-year"><?php echo date("Y") ?></span>
+            Lyndon Mykal Panton | All Rights Reserved
+        </p>
     </footer>
 </body>
 </html>
