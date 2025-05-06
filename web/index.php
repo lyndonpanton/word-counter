@@ -35,6 +35,7 @@
 </head>
 <body>
     <header>
+        <!-- Absolute information icon which results in a pop-up when clicked -->
         <h1>Word Counter</h1>
     </header>
 
