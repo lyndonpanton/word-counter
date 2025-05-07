@@ -1,14 +1,67 @@
 @media screen and (max-width: 1440px) {
 /* General ********************************************************************/
 
+/* Popup **********************************************************************/
+.popup-title {
+    font-size: 1.8em;
+}
+
+.popup-text {
+    font-size: 1.4em;
+}
+
+.popup-close {
+    font-size: 2.1em;
+}
+
 /* Header *********************************************************************/
+h1 {
+    font-size: 4.2em;
+}
 
 /* Main ***********************************************************************/
+main {
+    padding: 0 5vw;
+}
 
 /* Counter */
+#counter {
+    border: 3px solid black;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+#counter > ul > li {
+    font-size: 1.1em;
+}
+
+#counter > ul > li > span {
+    font-size: 0.9em;
+}
 
 /* Input */
+#words {
+
+}
 
 /* Footer *********************************************************************/
+.project-list {
+    padding: 8vh 1vw;
+}
 
+.project-list-item > a {
+    font-size: 0.9em;
+}
+
+.project-list-heading {
+    font-size: 1.1em;
+}
+
+#data > ul > li > a, #data > ul > li > a > i {
+    font-size: 1.1em;
+}
+
+#copyright {
+    font-size: 1.1em;
+}
 }

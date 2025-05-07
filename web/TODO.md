@@ -11,6 +11,7 @@ and input elements
 
 ### Styling
 
+- [ ] Statistics area should overflow in the x-axis
 - [ ] Project should be optimised for different screen sizes
     - [x] Desktop
     - [ ] Laptop
@@ -19,7 +20,7 @@ and input elements
 
 ### Interaction
 
-- [ ] A popup should be displayed when the information icon is pressed
+- [x] A popup should be displayed when the information icon is pressed
 
 ### Validation
 
