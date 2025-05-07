@@ -44,6 +44,7 @@
                 <li>Word count: <span id="word-count">0</span></li>
                 <li>Letter count: <span id="letter-count">0</span></li>
                 <li>Space count: <span id="space-count">0</span></li>
+                <li>Special character count: <span id="special-character-count">0</span></li>
                 <!-- list common words, maybe skip words less than 4 characters
                         long -->
                 </ul>

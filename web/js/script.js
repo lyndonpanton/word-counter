@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     let wordCount = document.getElementById("word-count");
     let letterCount = document.getElementById("letter-count");
     let spaceCount = document.getElementById("space-count");
+    let specialCharacterCount = document.getElementById("special-character-count");
 
     // Use web storage to retain user input on load (save after word count is
     // calculated)
@@ -15,11 +16,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     function calculateStatistics() {
         let words = wordInput.value.replace(/\s\s+/g, " ").split(" ");
-        console.log(words);
+        
 
-        calculateWordCount(words);
-        calculateLetterCount(words);
-        calculateSpaceCount(wordInput.value);
+        // setTimeout(function (e) {
+            calculateWordCount(words);
+            calculateLetterCount(words);
+            calculateSpaceCount(wordInput.value);
+            calculateSpecialCharacterCount(words);
+        // }, 500);
     }
 
     function calculateLetterCount(words) {
@@ -46,6 +50,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
         }
 
         spaceCount.textContent = spaces;
+    }
+
+    function calculateSpecialCharacterCount(words) {
+        let specialCharacters = 0;
+
+        for (let i = 0; i < words.length; i++) {
+            for (let j = 0; j < words[i].length; j++) {
+                if (words[i][j].match(/^[^a-zA-Z0-9]+$/i) !== null) {
+                    specialCharacters += 1;
+                }
+            }
+        }
+
+        specialCharacterCount.textContent = specialCharacters;
     }
 
     function calculateWordCount(words) {
