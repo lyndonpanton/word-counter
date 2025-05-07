@@ -22,6 +22,14 @@ header {
     height: 15vh;
 }
 
+#more-information {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+
+    font-size: 3em;
+}
+
 h1 {
     margin: 0;
     padding: 30px;

@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en-GB">
 <head>
+    <?php
+        include("config.php");
+    ?>
     <!-- meta: charset, application-name, author, description, keywords,
             viewport -->
     <meta charset="UTF-8" />
@@ -27,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <!-- font awesome... -->
+    <script src=<?php echo "https://kit.fontawesome.com/" . API_FONTAWESOME . ".js"; ?> crossorigin="anonymous"></script>
 
     <!-- first party resources -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -35,6 +39,7 @@
 <body>
     <header>
         <!-- Absolute information icon which results in a pop-up when clicked -->
+        <i id="more-information" class="fa-solid fa-circle-info" tabindex="1"></i>
         <h1>Word Counter</h1>
     </header>
 
