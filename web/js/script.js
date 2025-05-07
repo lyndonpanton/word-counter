@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     calculateStatistics(wordInput.value);
 
     function calculateStatistics() {
-        let words = wordInput.value.replace(/\s\s+/g, " ").split(" ");
-        
+        let words = wordInput.value.trim().replace(/\s\s+/g, " ").split(" ");
 
         setTimeout(function (e) {
             calculateWordCount(words);
@@ -67,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function calculateWordCount(words) {
-        wordCount.textContent = words.length;
-        console.log(words.length);
+        if (words.length == 1 && words[0] == "") wordCount.textContent = 0
+        else wordCount.textContent = words.length;
     }
 
     function loadStorage() {
