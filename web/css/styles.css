@@ -25,7 +25,7 @@ header {
 #more-information {
     position: absolute;
     top: 50px;
-    left: 30px;
+    left: 50px;
 
     font-size: 3em;
 }
@@ -140,6 +140,8 @@ footer {
     padding-right: 0;
     padding-left: 0;
 
+    color: #A9A9A9;
+
     list-style-type: none;
 }
 
@@ -148,7 +150,7 @@ footer {
 }
 
 #data > ul > li > a, #data > ul > li > a > i {
-    color: #787878;
+    /* color: #787878; */
     font-size: 1.2em;
     text-decoration: none;
 
@@ -160,7 +162,12 @@ footer {
 }
 
 #data-legal > li > a:hover {
+    color: black !important;
     text-decoration: underline;
+}
+
+#data-legal > li > a:visited {
+    color: inherit;
 }
 
 #data-social {
@@ -169,6 +176,52 @@ footer {
 
 #data-social > li {
     margin-left: 20px;
+}
+
+.fa-twitter {
+    color: #787878;
+    transition: color 0.5s linear;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2 !important;
+
+    transition: color 0.5s linear;
+}
+
+.fa-facebook {
+    color: #787878;
+    transition: color 0.5s linear;
+}
+
+.fa-facebook:hover {
+    color: #1877F2 !important;
+    transition: color 0.5s linear;
+}
+
+.fa-instagram {
+    background-clip: text;
+    /* -webkit-text-fill-color: #787878; */
+    background-image: linear-gradient(#787878, #787878) !important;
+    color: #787878;
+
+    transition: background-image 0.5s linear;
+    transition: color 0.5s linear;
+}
+
+.fa-instagram:hover {
+    /* color: #C13584 !important; */
+    /* -webkit-text-fill-color: #C13584; */
+    background-clip: text;
+    /* background-image: linear-gradient(#C13584, #C13584) !important; */
+    background-image: linear-gradient(
+        #405DE6, #5851DB, #833AB4, #C13584, #E1306C,
+        #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80
+    ) !important;
+    color: transparent;
+
+    transition: background-image 0.5s linear;
+    transition: color 0.5s linear;
 }
 
 #copyright {
