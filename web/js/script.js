@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
     moreInformation.addEventListener("click", displayProjectInformation);
     moreInformation.addEventListener("keypress", displayProjectInformation);
 
+    let isPopupDisplayed = false;
+    let popupCloseEvent;
+
     // Use web storage to retain user input on load (save after word count is
     // calculated)
     loadStorage();
@@ -77,42 +80,58 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function displayProjectInformation(e) {
-        if (
-            e.type == "keypress" && e.key === "Enter"
-            || e.type == "click"
-        ) {
-            let popup = document.createElement("div");
-            popup.id = "popup";
+        if (!isPopupDisplayed) {
+            if (
+                (e.type == "keypress" && e.key === "Enter")
+                || e.type == "click"
+            ) {
+                let popup = document.createElement("div");
+                popup.id = "popup";
 
-            let popupTitle = document.createElement("h2");
-            popupTitle.classList.add("popup-title");
-            popupTitle.textContent = "About This Project";
+                let popupTitle = document.createElement("h2");
+                popupTitle.classList.add("popup-title");
+                popupTitle.textContent = "About This Project";
 
-            let popupText = document.createElement("p");
-            popupText.classList.add("popup-text");
-            popupText.textContent =
-                    "An application which allows users to view statistics, "
-            popupText.textContent +=
-                    "such as the word count and letter count, of the text they "
-            popupText.textContent +=
-                    "supply to the application. This application can be used "
-            popupText.textContent +=
-                    "to assist users writing up reports, dissertations, "
-            popupText.textContent +=
-                "essays, literaure reviews, and more.";
+                let popupText = document.createElement("p");
+                popupText.classList.add("popup-text");
+                popupText.textContent =
+                        "An application which allows users to view statistics, "
+                popupText.textContent +=
+                        "such as the word count and letter count, of the text they "
+                popupText.textContent +=
+                        "supply to the application. This application can be used "
+                popupText.textContent +=
+                        "to assist users writing up reports, dissertations, "
+                popupText.textContent +=
+                    "essays, literaure reviews, and more.";
 
-            popup.appendChild(popupTitle);
-            popup.appendChild(popupText);
 
-            document.getElementsByTagName("main")[0].appendChild(popup);
+                popup.appendChild(popupTitle);
+                popup.appendChild(popupText);
+
+                document.addEventListener("click", hideProjectInformation);
+                // https://stackoverflow.com/a/3369624
+                document.addEventListener("keyup", hideProjectInformation);
+
+                document.getElementsByTagName("main")[0].appendChild(popup);
+                isPopupDisplayed = true;
+            }
         }
     }
 
     function hideProjectInformation(e) {
-        let popup = document.getElementById("popup");
+        if (e.key === "Escape") {
+            let popup = document.getElementById("popup");
 
-        if (popup) {
-            popup.remove();
+            if (popup) {
+                popup.remove();
+            }
+
+            document.removeEventListener("click", hideProjectInformation);
+            document.removeEventListener("keypress", hideProjectInformation);
+            isPopupDisplayed = false;
+        } else if (e.type == "click") {
+
         }
     }
 
