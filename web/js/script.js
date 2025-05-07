@@ -20,10 +20,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
         console.log(words);
 
         calculateWordCount(words);
+        calculateLetterCount(words);
     }
 
-    function calculateLetterCount(e) {
+    function calculateLetterCount(words) {
+        let letters = 0;
 
+        for (let i = 0; i < words.length; i++) {
+            for (let j = 0; j < words[i].length; j++) {
+                if (words[i][j].match(/[a-z]/i) !== null) {
+                    letters += 1;
+                }
+            }
+        }
+
+        letterCount.textContent = letters;
     }
 
     function calculateSpaceCount(e) {
