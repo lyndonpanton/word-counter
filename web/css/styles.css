@@ -147,12 +147,20 @@ footer {
 
 }
 
-#data > ul > li, #data > ul > li > i {
+#data > ul > li > a, #data > ul > li > a > i {
+    color: #787878;
     font-size: 1.2em;
+    text-decoration: none;
+
+    cursor: pointer;
 }
 
 #data-legal > li {
     margin-right: 20px;
+}
+
+#data-legal > li > a:hover {
+    text-decoration: underline;
 }
 
 #data-social {

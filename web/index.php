@@ -127,15 +127,15 @@
 
         <section id="data">
             <ul id="data-legal">
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-                <li>Cookies</li>
+                <li><a href="#" target="_blank">Privacy Policy</a></li>
+                <li><a href="#" target="_blank">Terms and Conditions</a></li>
+                <li><a href="#" target="_blank">Cookies</a></li>
             </ul>
 
             <ul id="data-social">
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </section>
 
