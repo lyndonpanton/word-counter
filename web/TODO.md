@@ -26,7 +26,7 @@ and input elements
 ### Local Storage
 
 - [ ] Input element data should be saved on change
-- [ ] Statistics should be updated using save data on page load
+- [ ] Statistics should be updated using save data when the page is loaded
 
 ### Accessibility
 
@@ -42,8 +42,8 @@ and input elements
 
 ### Deployment
 
+- [ ] Add setup instructions to [README.md](../README.md)
+- [ ] State features of the project in [README.md](../README.md)
 - [ ] Add project to portfolio
     - [ ] Link
     - [ ] Screenshot
-- [ ] Add setup instructions to [README.md](../README.md)
-- [ ] State features of the project in [README.md](../README.md)

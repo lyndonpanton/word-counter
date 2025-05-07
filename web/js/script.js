@@ -17,12 +17,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
     function calculateStatistics() {
         let words = wordInput.value.trim().replace(/\s\s+/g, " ").split(" ");
 
-        setTimeout(function (e) {
+        // setTimeout(function (e) {
             calculateWordCount(words);
             calculateLetterCount(words);
             calculateSpaceCount(wordInput.value);
             calculateSpecialCharacterCount(words);
-        }, 0);
+        // }, 0);
+
+        saveWordInput(wordInput.value);
     }
 
     function calculateLetterCount(words) {
@@ -71,10 +73,37 @@ document.addEventListener("DOMContentLoaded", function (e) {
     }
 
     function loadStorage() {
-
+        if (storageAvailable("localStorage")) {
+            if (localStorage.getItem("word-input")) {
+                wordInput.value = localStorage.getItem("word-input");
+            }
+        } else {
+            console.log(
+                "Local storage is not available. Failed to load storage."
+            );
+        }
     }
 
-    function saveStatistics(e) {
+    function saveWordInput(text) {
+        localStorage.setItem("word-input", text);
+    }
 
+    function storageAvailable(storageType) {
+        let storage;
+        try {
+            storage = window[storageType];
+            const x = "__storage_test__";
+            storage.setItem(x, x);
+            storage.removeItem(x);
+            return true;
+        } catch (e) {
+            return (
+                e instanceof DOMException &&
+                e.name === "QuotaExceededError" &&
+                // acknowledge QuotaExceededError only if there's something already stored
+                storage &&
+                storage.length !== 0
+            );
+        }
     }
 });
