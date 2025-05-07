@@ -122,12 +122,50 @@ footer {
 }
 
 #data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+    border-top: 1px solid #CDCDCD;
+}
+
+#data > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    list-style-type: none;
+}
+
+#data-legal {
+
+}
+
+#data > ul > li, #data > ul > li > i {
+    font-size: 1.2em;
+}
+
+#data-legal > li {
+    margin-right: 20px;
+}
+
+#data-social {
+
+}
+
+#data-social > li {
+    margin-left: 20px;
 }
 
 #copyright {
     margin: 0;
-    border-top: 1px solid #CDCDCD;
+    /* border-top: 1px solid #CDCDCD; */
     padding: 3vh 0;
 
     font-size: 1.2em;
