@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
     let spaceCount = document.getElementById("space-count");
     let specialCharacterCount = document.getElementById("special-character-count");
 
+    let moreInformation = document.getElementById("more-information");
+    moreInformation.addEventListener("click", displayProjectInformation);
+    moreInformation.addEventListener("keypress", displayProjectInformation);
+
     // Use web storage to retain user input on load (save after word count is
     // calculated)
     loadStorage();
@@ -70,6 +74,46 @@ document.addEventListener("DOMContentLoaded", function (e) {
     function calculateWordCount(words) {
         if (words.length == 1 && words[0] == "") wordCount.textContent = 0
         else wordCount.textContent = words.length;
+    }
+
+    function displayProjectInformation(e) {
+        if (
+            e.type == "keypress" && e.key === "Enter"
+            || e.type == "click"
+        ) {
+            let popup = document.createElement("div");
+            popup.id = "popup";
+
+            let popupTitle = document.createElement("h2");
+            popupTitle.classList.add("popup-title");
+            popupTitle.textContent = "About This Project";
+
+            let popupText = document.createElement("p");
+            popupText.classList.add("popup-text");
+            popupText.textContent =
+                    "An application which allows users to view statistics, "
+            popupText.textContent +=
+                    "such as the word count and letter count, of the text they "
+            popupText.textContent +=
+                    "supply to the application. This application can be used "
+            popupText.textContent +=
+                    "to assist users writing up reports, dissertations, "
+            popupText.textContent +=
+                "essays, literaure reviews, and more.";
+
+            popup.appendChild(popupTitle);
+            popup.appendChild(popupText);
+
+            document.getElementsByTagName("main")[0].appendChild(popup);
+        }
+    }
+
+    function hideProjectInformation(e) {
+        let popup = document.getElementById("popup");
+
+        if (popup) {
+            popup.remove();
+        }
     }
 
     function loadStorage() {

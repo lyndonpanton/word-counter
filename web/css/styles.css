@@ -16,6 +16,36 @@ body, html {
     padding: 0;
 }
 
+/* Popup **********************************************************************/
+
+#popup {
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+
+    border: 8px solid black;
+    border-radius: 20px;
+    width: 50vw;
+    height: 40vh;
+    padding: 2vh 2vw;
+
+    background-color: white;
+
+    color: black;
+
+    overflow-y: scroll;
+}
+
+.popup-title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.popup-text {
+    font-size: 1.6em;
+    text-align: left;
+}
+
 /* Header *********************************************************************/
 header {
     margin-bottom: 5vh;

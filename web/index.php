@@ -38,7 +38,6 @@
 </head>
 <body>
     <header>
-        <!-- Absolute information icon which results in a pop-up when clicked -->
         <i id="more-information" class="fa-solid fa-circle-info" tabindex="1"></i>
         <h1>Word Counter</h1>
     </header>

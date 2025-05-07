@@ -25,8 +25,8 @@ and input elements
 
 ### Local Storage
 
-- [ ] Input element data should be saved on change
-- [ ] Statistics should be updated using save data when the page is loaded
+- [x] Input element data should be saved on change
+- [x] Statistics should be updated using save data when the page is loaded
 
 ### Accessibility
 
