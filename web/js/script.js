@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     moreInformation.addEventListener("keypress", displayProjectInformation);
 
     let isPopupDisplayed = false;
-    let popupCloseEvent;
 
     // Use web storage to retain user input on load (save after word count is
     // calculated)
@@ -105,9 +104,16 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 popupText.textContent +=
                     "essays, literaure reviews, and more.";
 
+                let popupCloseIcon = document.createElement("i");
+                popupCloseIcon.classList.add(
+                        "fa-solid", "fa-xmark", "popup-close"
+                );
+                popupCloseIcon.tabIndex = "1";
+                popupCloseIcon.addEventListener("keyup", hideProjectInformation);
 
                 popup.appendChild(popupTitle);
                 popup.appendChild(popupText);
+                popup.appendChild(popupCloseIcon);
 
                 document.addEventListener("click", hideProjectInformation);
                 // https://stackoverflow.com/a/3369624
@@ -131,7 +137,29 @@ document.addEventListener("DOMContentLoaded", function (e) {
             document.removeEventListener("keypress", hideProjectInformation);
             isPopupDisplayed = false;
         } else if (e.type == "click") {
-
+            if (e.target.classList.contains("popup-close")) {
+                let popup = document.getElementById("popup");
+    
+                if (popup) {
+                    popup.remove();
+                }
+    
+                document.removeEventListener("click", hideProjectInformation);
+                document.removeEventListener("keypress", hideProjectInformation);
+                isPopupDisplayed = false;
+            }
+        } else if (e.key === "Enter" && e.target.classList.contains("popup-close")) {
+            if (e.target.classList.contains("popup-close")) {
+                let popup = document.getElementById("popup");
+    
+                if (popup) {
+                    popup.remove();
+                }
+    
+                document.removeEventListener("click", hideProjectInformation);
+                document.removeEventListener("keypress", hideProjectInformation);
+                isPopupDisplayed = false;
+            }
         }
     }
 

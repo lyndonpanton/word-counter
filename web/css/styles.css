@@ -46,6 +46,14 @@ body, html {
     text-align: left;
 }
 
+.popup-close {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+
+    font-size: 2.5em;
+}
+
 /* Header *********************************************************************/
 header {
     margin-bottom: 5vh;
