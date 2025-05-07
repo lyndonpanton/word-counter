@@ -52,7 +52,7 @@
                 <li>Special character count: <span id="special-character-count">0</span></li>
                 <!-- list common words, maybe skip words less than 4 characters
                         long -->
-                </ul>
+            </ul>
         </section>
 
         <section id="words">
