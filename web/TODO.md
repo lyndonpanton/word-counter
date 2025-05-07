@@ -1,0 +1,49 @@
+# TODO
+
+## Description
+
+A list of tasks for this project.
+
+### Content
+
+- [ ] A short description of the project should be placed above the statistics
+and input elements
+
+### Styling
+
+- [ ] Project should be optimised for different screen sizes
+    - [x] Desktop
+    - [ ] Laptop
+    - [ ] Tablet
+    - [ ] Mobile
+
+### Interaction
+
+- [ ] A popup should be displayed when the information icon is pressed
+
+### Validation
+
+### Local Storage
+
+- [ ] Input element data should be saved on change
+- [ ] Statistics should be updated using save data on page load
+
+### Accessibility
+
+- [ ] Tab index
+- [ ] w3c validator
+- [ ] Skip to main content
+
+### Routing
+
+### Database
+
+### Bugs
+
+### Deployment
+
+- [ ] Add project to portfolio
+    - [ ] Link
+    - [ ] Screenshot
+- [ ] Add setup instructions to [README.md](../README.md)
+- [ ] State features of the project in [README.md](../README.md)
