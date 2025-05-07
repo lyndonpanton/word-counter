@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     // Add a 1 second delay between calculating the new count(s)
     // Delete the current timeout when the input area is updated
     let wordInput = document.getElementById("word-input");
-    wordInput.addEventListener("keypress", calculateStatistics);
+    wordInput.addEventListener("keyup", calculateStatistics);
 
     let wordCount = document.getElementById("word-count");
     let letterCount = document.getElementById("letter-count");
@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
         let words = wordInput.value.replace(/\s\s+/g, " ").split(" ");
         
 
-        // setTimeout(function (e) {
+        setTimeout(function (e) {
             calculateWordCount(words);
             calculateLetterCount(words);
             calculateSpaceCount(wordInput.value);
             calculateSpecialCharacterCount(words);
-        // }, 500);
+        }, 0);
     }
 
     function calculateLetterCount(words) {
