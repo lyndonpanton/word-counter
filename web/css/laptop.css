@@ -19,6 +19,10 @@
         font-size: 4.2em;
     }
 
+    #more-information {
+        font-size: 3em;
+    }
+
     /* Main *******************************************************************/
     main {
         padding: 0 4vw;

@@ -1,14 +1,89 @@
 @media screen and (max-width: 1024px) {
-/* General ********************************************************************/
+    /* General ****************************************************************/
 
-/* Header *********************************************************************/
+    /* Popup ******************************************************************/
+    #popup {
+        width: 45vw;
+        height: 35vh;
+        padding: 1vh 2vw;
+    }
+    .popup-title {
+        font-size: 1.5em;
+    }
 
-/* Main ***********************************************************************/
+    .popup-text {
+        font-size: 1.2em;
+    }
 
-/* Counter */
+    .popup-close {
+        font-size: 1.8em;
+    }
 
-/* Input */
+    /* Header *****************************************************************/
+    h1 {
+        font-size: 3.6em;
+    }
 
-/* Footer *********************************************************************/
+    #more-information {
+        font-size: 2.5em;
+    }
+
+    /* Main *******************************************************************/
+    main {
+        padding: 0 1vw;
+    }
+
+    /* Counter */
+    #counter {
+        border: 3px solid black;
+        padding-right: 5px;
+        padding-left: 15px;
+    }
+
+    #counter > ul > li {
+        font-size: 1.1em;
+    }
+
+    #counter > ul > li > span {
+        font-size: 0.9em;
+    }
+
+    /* Input */
+    #words {
+
+    }
+
+    /* Footer *****************************************************************/
+    footer {
+        padding: 0 4vw;
+    }
+
+    #project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project-list {
+        width: 40vw;
+        padding: 6vh 1vw;
+    }
+
+    .project-list-item > a {
+        font-size: 1.1em;
+    }
+
+    .project-list-heading {
+        font-size: 1.2em;
+    }
+
+    #data > ul > li > a, #data > ul > li > a > i {
+        font-size: 1.1em;
+    }
+
+    #copyright {
+        font-size: 1.1em;
+    }
 
 }
