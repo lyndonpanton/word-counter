@@ -8,12 +8,12 @@ A list of tasks for this project.
 
 ### Styling
 
-- [ ] Statistics area should overflow in the x-axis
-- [ ] Project should be optimised for different screen sizes
+- [x] Statistics area should overflow in the x-axis
+- [x] Project should be optimised for different screen sizes
     - [x] Desktop
     - [x] Laptop
     - [x] Tablet
-    - [ ] Mobile
+    - [x] Mobile
 
 ### Interaction
 
