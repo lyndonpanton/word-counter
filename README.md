@@ -29,6 +29,13 @@ relevant route on localhost:8000
 
 ## Features
 
+- Users can view the word count of text they enter in the application
+- Users can view the letter count of text they enter in the application
+- Users can view the space count of text they enter in the application
+- Users can view the special character count of text they enter in the
+application
+- Application uses the localStorage API to store user data across sessions
+
 ## Technology
 
 - Frontend: HTML, CSS, JavaScript
