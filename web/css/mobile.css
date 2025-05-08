@@ -1,14 +1,152 @@
 @media screen and (max-width: 767px) {
 /* General ********************************************************************/
 
+/* Popup **********************************************************************/
+#popup {
+    position: absolute;
+
+    border-width: 4px;
+    width: 50vw;
+    height: 30vh;
+    padding: 1vh 2vw;
+}
+
+.popup-title {
+    font-size: 1.3em;
+}
+
+.popup-text {
+    font-size: 1em;
+}
+
+.popup-close {
+    font-size: 2em;
+}
+
 /* Header *********************************************************************/
+header {
+    margin-bottom: 2vh; 
+}
+
+#more-information {
+    top: 40px;
+    left: 30px;
+
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2.1em;
+}
 
 /* Main ***********************************************************************/
+main {
+    display: block;
+}
 
 /* Counter */
 
+#counter {
+    margin: 0 0 5vh 0;
+    border-width: 1px;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+#counter > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0vh 2vw;
+    width: 100%;
+}
+
+#counter > ul > li {
+    margin: 1vh 1vw;
+    padding: 0;
+    width: 40%;
+
+    text-align: center;
+}
+
 /* Input */
 
-/* Footer *********************************************************************/
+#words {
+    margin: 0;
+    border-width: 1px;
+    width: 100%;
+    height: 60%;
+}
 
+#word-input {
+    margin: 0;
+    border: 1px solid black;
+    /* padding: 0; */
+}
+
+/* Footer *********************************************************************/
+footer {
+    padding: 0;
+}
+
+#project {
+    display: block;
+
+    border-top: 1px solid #CDCDCD;
+    padding: 3vh 0;
+}
+
+.project-list {
+    width: 100%;
+    padding: 2vh 1vw;
+
+    text-align: center;
+}
+
+.project-list-item > a {
+    font-size: 1.1em;
+}
+
+.project-list-heading {
+    font-size: 1.2em;
+}
+
+#data {
+    display: block;
+}
+
+#data > ul {
+    display: block;
+
+    margin: 35px 0;
+    padding: 0;
+
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#data-legal > li {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#data > ul > li {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    width: 30%;
+
+    font-size: 1.1em;
+}
+
+#copyright {
+    font-size: 0.9em;
+}
+
+#current-year {
+    font-size: 0.9em;
+}
 }

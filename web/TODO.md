@@ -6,16 +6,13 @@ A list of tasks for this project.
 
 ### Content
 
-- [ ] A short description of the project should be placed above the statistics
-and input elements
-
 ### Styling
 
 - [ ] Statistics area should overflow in the x-axis
 - [ ] Project should be optimised for different screen sizes
     - [x] Desktop
-    - [ ] Laptop
-    - [ ] Tablet
+    - [x] Laptop
+    - [x] Tablet
     - [ ] Mobile
 
 ### Interaction
