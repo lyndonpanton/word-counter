@@ -1,67 +1,71 @@
 @media screen and (max-width: 1440px) {
-/* General ********************************************************************/
+    /* General ****************************************************************/
 
-/* Popup **********************************************************************/
-.popup-title {
-    font-size: 1.8em;
-}
+    /* Popup ******************************************************************/
+    .popup-title {
+        font-size: 1.8em;
+    }
 
-.popup-text {
-    font-size: 1.4em;
-}
+    .popup-text {
+        font-size: 1.4em;
+    }
 
-.popup-close {
-    font-size: 2.1em;
-}
+    .popup-close {
+        font-size: 2.1em;
+    }
 
-/* Header *********************************************************************/
-h1 {
-    font-size: 4.2em;
-}
+    /* Header *****************************************************************/
+    h1 {
+        font-size: 4.2em;
+    }
 
-/* Main ***********************************************************************/
-main {
-    padding: 0 5vw;
-}
+    /* Main *******************************************************************/
+    main {
+        padding: 0 4vw;
+    }
 
-/* Counter */
-#counter {
-    border: 3px solid black;
-    padding-right: 5px;
-    padding-left: 15px;
-}
+    /* Counter */
+    #counter {
+        border: 3px solid black;
+        padding-right: 5px;
+        padding-left: 15px;
+    }
 
-#counter > ul > li {
-    font-size: 1.1em;
-}
+    #counter > ul > li {
+        font-size: 1.1em;
+    }
 
-#counter > ul > li > span {
-    font-size: 0.9em;
-}
+    #counter > ul > li > span {
+        font-size: 0.9em;
+    }
 
-/* Input */
-#words {
+    /* Input */
+    #words {
 
-}
+    }
 
-/* Footer *********************************************************************/
-.project-list {
-    padding: 8vh 1vw;
-}
+    /* Footer *****************************************************************/
+    footer {
+        padding: 0 2vw;
+    }
 
-.project-list-item > a {
-    font-size: 0.9em;
-}
+    .project-list {
+        padding: 8vh 1vw;
+    }
 
-.project-list-heading {
-    font-size: 1.1em;
-}
+    .project-list-item > a {
+        font-size: 1.1em;
+    }
 
-#data > ul > li > a, #data > ul > li > a > i {
-    font-size: 1.1em;
-}
+    .project-list-heading {
+        font-size: 1.2em;
+    }
 
-#copyright {
-    font-size: 1.1em;
-}
+    #data > ul > li > a, #data > ul > li > a > i {
+        font-size: 1.1em;
+    }
+
+    #copyright {
+        font-size: 1.1em;
+    }
 }
