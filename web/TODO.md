@@ -42,6 +42,7 @@ A list of tasks for this project.
 
 - [x] Add setup instructions to [README.md](../README.md)
 - [x] State features of the project in [README.md](../README.md)
-- [ ] Add project to portfolio
-    - [ ] Link
-    - [ ] Screenshot
+- [x] Add project to portfolio
+    - [x] Link
+    - [x] Screenshot
+    - [x] Upload to website
