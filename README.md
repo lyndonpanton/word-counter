@@ -38,8 +38,25 @@ application
 
 ## Technology
 
-- Frontend: HTML, CSS, JavaScript
-- Server: PHP
+### Development Tools
+
+- Command Prompt
+- Visual Studio Code
+- XAMPP
+
+### Languages and Frameworks
+
+- Frontend
+    - HTML
+    - CSS
+    - JavaScript
+- Server
+    - PHP
+
+### Managers, Packages, and Libraries
+
+- Google Fonts
+- Fontawesome
 
 ## Credits
 
