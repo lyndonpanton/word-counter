@@ -40,7 +40,7 @@ A list of tasks for this project.
 
 ### Deployment
 
-- [ ] Add setup instructions to [README.md](../README.md)
+- [x] Add setup instructions to [README.md](../README.md)
 - [ ] State features of the project in [README.md](../README.md)
 - [ ] Add project to portfolio
     - [ ] Link

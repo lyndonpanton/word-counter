@@ -7,6 +7,26 @@ the application.
 
 ## Getting Started
 
+### Downloading The Project
+
+The project can be downloaded from
+[GitHub](https://github.com/lyndonpanton/word-counter) using the **Code** button
+and then unzipped onto the user's computer for use.
+
+### Configuring The Server Application
+
+The latest version of [XAMPP](https://www.apachefriends.org/) can be downloaded
+from its website.
+
+1. Complete the application's installation proocess
+2. Start the **Apache** module (the port should be 8000)
+
+### Starting The Application
+
+1. In your brownser, access the web version of the application using the
+relevant route on localhost:8000
+2. You can now view and interact with the application
+
 ## Features
 
 ## Technology
