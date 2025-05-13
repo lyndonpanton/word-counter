@@ -105,7 +105,7 @@
                     <a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
                 </li>
                 <li class="project-list-item">
-                    <a href="https://fonts.google.com/" target="_blank">Google Fonts<a>
+                    <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
                 </li>
             </ul>
             <ul class="project-list">
